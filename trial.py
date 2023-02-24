@@ -6,7 +6,7 @@ def main():
 
 
 def convert(emojize):
-    return print(emoji.emojize(emojize))
+    return print(f"Output: {emoji.emojize(emojize)}")
 
 
 main()
