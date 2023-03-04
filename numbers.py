@@ -1,13 +1,16 @@
 def main():
-    z = value()
-    print(f"Value of z is {z}")
+    x = value("What is x? ")
+    print(f"Value of x is {x}")
 
 
-def value():
-    try:
-        z = int(input("Enter value of z: "))
-        return z
-    except ValueError:
-        print("Value of z is not an integer")
+def value(prompt):
+    while True:
+        try:
+            z = int(input(prompt))
+            return z
+        except ValueError:
+            print(f"Value of {prompt} is not an integer")
+        else:
+            break
 
 main()
